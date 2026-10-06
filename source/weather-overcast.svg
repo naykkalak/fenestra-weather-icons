@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="-1.5 -1.5 75 75">
+  <!-- Fenestra Weather - weather-overcast - (c) 2026 naykkalak - LGPL-3.0-or-later -->
+  <defs>
+    <path id="leftLobe" d="M 9 34 a 7.5 7.5 0 0 1 0.3 -15 a 8 8 0 0 1 12.7 4 a 12 12 0 0 0 -3.5 11 z"/>
+    <radialGradient id="baseMain" cx="0.35" cy="0.3" r="0.85">
+      <stop offset="0" stop-color="#C7D6E5"/>
+      <stop offset="1" stop-color="#5C7691"/>
+    </radialGradient>
+    <radialGradient id="baseRight" cx="0.35" cy="0.3" r="0.85">
+      <stop offset="0" stop-color="#BFD0E0"/>
+      <stop offset="1" stop-color="#55708C"/>
+    </radialGradient>
+    <radialGradient id="baseLeft" cx="0.4" cy="0.25" r="0.85">
+      <stop offset="0" stop-color="#BFD0E0"/>
+      <stop offset="1" stop-color="#55708C"/>
+    </radialGradient>
+    <radialGradient id="wash" cx="0.3" cy="0.25" r="0.6">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="leftCrease" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#3F5E7A" stop-opacity="0.45"/>
+      <stop offset="0.55" stop-color="#3F5E7A" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#3F5E7A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="rightCrease" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#3F5E7A" stop-opacity="0.6"/>
+      <stop offset="0.55" stop-color="#3F5E7A" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#3F5E7A" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softenSeams" x="-0.010574888" y="-0.016615385" width="1.0211498" height="1.0332308">
+      <feGaussianBlur stdDeviation="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Nuage gris (ciel couvert), même dessin que weather-overcast-wind, taille normale -->
+  <g transform="translate(-2.91,-5.51) scale(1.7625)">
+    <g fill="#3F5E7A" opacity="0.15">
+      <circle cx="23" cy="23" r="12.9"/>
+      <circle cx="33" cy="27" r="9.9"/>
+      <path d="M 9 34 a 7.5 7.5 0 0 1 0.3 -15 a 8 8 0 0 1 12.7 4 a 12 12 0 0 0 -3.5 11 z" transform="matrix(1.0399999618530273, 0, 0, 1.0399999618530273, -0.6000000238418579, -1.0399999618530273)"/>
+    </g>
+  </g>
+  <g transform="translate(-2.91,-5.51) scale(1.7625)" filter="url(#softenSeams)">
+    <circle cx="23" cy="23" r="12.5" fill="url(#baseMain)"/>
+    <circle cx="33" cy="27" r="9.5" fill="url(#baseRight)"/>
+    <path d="M 9 34 a 7.5 7.5 0 0 1 0.3 -15 a 8 8 0 0 1 12.7 4 a 12 12 0 0 0 -3.5 11 z" fill="url(#baseLeft)"/>
+    <circle cx="23" cy="23" r="12.5" fill="url(#wash)"/>
+    <circle cx="33" cy="27" r="9.5" fill="url(#wash)"/>
+    <path d="M 9 34 a 7.5 7.5 0 0 1 0.3 -15 a 8 8 0 0 1 12.7 4 a 12 12 0 0 0 -3.5 11 z" fill="url(#wash)"/>
+    <ellipse cx="19.5" cy="25" rx="6.5" ry="9.5" fill="url(#leftCrease)"/>
+    <ellipse cx="29" cy="24.5" rx="7" ry="10" fill="url(#rightCrease)"/>
+  </g>
+</svg>
