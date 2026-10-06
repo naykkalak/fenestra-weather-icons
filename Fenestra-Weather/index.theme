@@ -1,0 +1,12 @@
+[Icon Theme]
+Name=Fenestra Weather
+Comment=Weather icons for KDE Plasma (Fenestra series) by naykkalak - LGPL-3.0-or-later
+Inherits=breeze
+Directories=scalable/status
+
+[scalable/status]
+Size=48
+MinSize=16
+MaxSize=512
+Type=Scalable
+Context=Status
